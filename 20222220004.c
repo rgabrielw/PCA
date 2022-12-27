@@ -4,7 +4,7 @@ int main()
 {
     int cont, num, maior, menor;
     
-    for (cont=0; cont<4; cont++){
+    for (cont=0; cont<20; cont++){
         printf("\ndigite o numero: ");
         scanf("%d",& num);
         
