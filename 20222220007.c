@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main (){
-	float cont, num, maior, menor, media;
+	float cont, num, maior, menor;
 	float soma = 0;
 	
 	for(cont=0; cont<3; cont++){
