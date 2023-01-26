@@ -11,15 +11,24 @@ void produto_escalar(){
 	for(i=1; i<=tam; i++){
 		printf("digite os valores de x: ");
 		scanf("%d", &numx[i]);
+		while(numx[i]<1){
+			printf("numero invalido! digite apenas numeros maiores que 1: ");
+			scanf("%d", &numx[i]);
+		}
 	}
 	for(i=1; i<=tam; i++){
 		printf("digite os valores de y: ");
 		scanf("%d", &numy[i]);
+		while(numy[i]<1){
+			printf("numero invalido! digite apenas numeros maiores que 1: ");
+			scanf("%d", &numy[i]);
+		}
 	}
 	for(i=1; i<=tam; i++){
 		pe += numx[i] * numy[i];
 	} 
 	printf("\no produto escalar dos dois vetores eh %d", pe);
+	
 	return;
 }
 
