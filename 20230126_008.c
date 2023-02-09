@@ -25,8 +25,8 @@ int main(int argc, char *argv[]){
 	funcao(mat1,mat2,mat3);
 	
 	for(linha=0; linha<M1L; linha++){
-    	for(coluna=0; coluna<M2C; coluna++)
-    		printf("%d", mat3[linha][coluna]);
+    		for(coluna=0; coluna<M2C; coluna++)
+    			printf("%d", mat3[linha][coluna]);
 		printf("\n");	  
 	}
   return 0;
