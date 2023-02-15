@@ -10,12 +10,12 @@ int main(){
 	char achar[20];
 	for(i = 0; i < 5 ; i+=1){
 		for(j = 0; j < 4 ; j+=1){
-			printf("Defina o %d aluno da equipe %d: ", j+1, i+1);
+			printf("diga o %d aluno da equipe %d: ", j+1, i+1);
 			scanf(" %[^\n]", nome[i][j]);			
 		}
 	}
 	while (n == 1){
-		printf("qual aluno quer achar?\n");
+		printf("Digite o nome do aluno para achar?: ");
 		scanf(" %[^\n]", achar);
 		for(i = 0; i < 5 ; i+=1){
 			for(j = 0; j < 4 ; j+=1){
@@ -31,7 +31,7 @@ int main(){
 				printf("%s\n", nome[a][j]);
 			}
 		}else{
-			printf("nome nao consta na lista de alunos.\nverifique e tente novamente.\n\n");
+			printf("Esse nome não está na lista!\n");
 		}
 	}
 	return 0;	
